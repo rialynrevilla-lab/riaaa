@@ -1,0 +1,165 @@
+body {
+  font-family: Brush Script 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  background-image: url(woww.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed; 
+  height: 100vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  color: #F0F0F0;
+ }
+
+ .main-title-container {
+  background-color: rgba(231, 186, 186, 0.3); 
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-bottom: 30px;
+ }
+
+ .main-title {
+  color: rgb(222, 16, 119); 
+  font-size: 2.5em;
+  text-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.5); 
+ }
+
+ .nav-container {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(2, minmax(200px, 300px)); 
+  grid-gap: 50px; 
+  max-width: 1000px;
+  padding: 50px;
+  justify-content: center;
+ }
+
+ .nav-item {
+  background-color: rgba(230, 185, 173, 0.4); 
+  padding: 25px; 
+  font-size: 1em;
+  text-align: center;
+  border-radius: 15px; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+ }
+
+ .nav-item:hover {
+  background-color: rgba(67, 24, 98, 0.6); 
+  transform: translateY(-5px); 
+ }
+
+ .nav-item a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+  font-size: 1.2em; 
+  display: block;
+  width: 100%;
+  height: 200%;
+ }
+
+ .back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  border: 2px solid hotpink; 
+  border-radius: 20px;
+  text-decoration: none;
+  color: hotpink;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s, color 0.3s;
+ }
+
+ .back-button:hover {
+  background-color: yellow;
+  color: #333;
+ }
+
+ .sub-page-heading-container {
+  margin-bottom: 1px;
+  margin-top: 40px;
+  background-color: rgba(43, 42, 42, 0.3); 
+  padding: 10px 20px;
+  border-radius: 5px;
+ }
+
+ .sub-page-heading {
+  color: rgb(246, 43, 145); 
+  font-size: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+
+ .activity-button {
+  padding: 12px 25px;
+  border: 2px solid #7cc7dc;
+  border-radius: 25px; 
+  text-decoration: none;
+  color: #F0F0F0; 
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: rgba(0, 0, 0, 0.4); 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 30px; 
+ }
+
+ .activity-button:hover {
+  background-color: #83ddf6;
+  color: #333;
+ }
+
+ .table-wrapper {
+  max-width: 90%; 
+  overflow-x: auto; 
+  margin: 50px;
+ }
+
+ table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px; 
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+ }
+
+ th, td {
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  padding: 12px 15px; 
+  text-align: center;
+  color: #FFF;
+ }
+
+ th {
+  font-weight: bold;
+  background-color: rgba(73, 19, 75, 0.6); 
+  color: white; 
+ }
+
+ td {
+  background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 1000px) {
+  .main-title {
+  font-size: 2em;
+  }
+  .nav-container {
+  grid-template-columns: 1fr; 
+  }
+  .sub-page-heading {
+  font-size: 1.6em;
+  }
+  th, td {
+  padding: 8px 10px;
+  font-size: 10em;
+  }
+ }
